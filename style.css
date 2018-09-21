@@ -1,0 +1,68 @@
+html{
+  width: 1280px;
+}
+body{ color: white;
+      font-family: sans-serif;
+      border: 5px solid #3d3d3d;
+      display: block;
+      width: 100%;
+         }
+
+.menu{
+  padding: 10px;
+  height: 150px;
+  background-color: #f0f1f5;
+  border-bottom: 5px solid #3d3d3d;
+}
+
+.flexcontainer {
+
+   padding: 0px;
+
+   display: -webkit-flex;
+   display: flex;
+
+   -webkit-flex-direction: row;
+   flex-direction: row;
+
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+ }
+
+/*menu*/
+ #home{ background-color: #e4e4ec; padding: 50px; flex-basis: 20%;}
+ #presentation{ background-color: #2980b9; padding: 50px; flex-basis: 20%;}
+ #competences{ background-color: #e74c3c; padding: 50px; flex-basis: 16%;}
+ #formation{ background-color: #e67e22; padding: 50px; flex-basis: 16%;}
+ #experiences{ background-color: #95a5a6; padding: 50px; flex-basis: 16%; }
+ #contact{ background-color: #e74c3c; padding: 50px; flex-basis: 16%;}
+
+ /*presentation*/
+ h1, p{
+   font-family: garamond;
+   font-color: ##9ea4b0;
+ }
+
+ #nom{ background-color: #555c6f; padding: 100px; flex-basis: 30%;}
+ #texte{ background-color: #01bdbe; padding: 174px; flex-basis: 70%;}
+
+/* competences */
+
+#competence
+{
+  background-color: #555c6f; padding: 200px; flex-basis: auto;
+}
+#experience
+{
+  background-color: #555c6f; padding: 200px; flex-basis: 100%;
+}
+#diplome
+{
+  background-color: #555c6f; padding: 200px; flex-basis: 100%;
+}
+#informations
+{
+  background-color: #2980b9; padding: 200px; flex-basis: 100%;
+}
