@@ -41,7 +41,7 @@ p{
 ul{
     list-style: none;
 }
-a{
+li a{
     text-decoration: none;
     color: #EFEEEC;
     text-shadow: black 1px 0 10px;
@@ -78,8 +78,9 @@ header
     width: 100%;
     position: fixed;
     background-color: #B1B1B177;
-    border-bottom: 1px solid #ddd
+    border-bottom: 1px solid #ddd7;
 }
+
 header h1
 {
     float: left;
@@ -140,6 +141,10 @@ header nav ul li a
     border-bottom: 1px solid #ddd;
     background-color: #FFF;
 }
+a#step-1{
+  color: #007bff;
+  text-shadow: black 1px 0 1px;
+}
 #steps h4:hover{
    text-decoration: underline;
     color: #ff7a00;
@@ -176,7 +181,6 @@ header nav ul li a
     background-position:  top center;
 
 }
-
 #step-2
 {
      background-repeat: no-repeat;
@@ -198,6 +202,12 @@ header nav ul li a
     border-bottom: 1px solid #ddd
 
 }
+div.clear{
+  margin-left: 80px;
+}
+article#image{
+  margin-left: 60px;
+}
 #possibilities h2
 {
     width: 350px;
@@ -206,6 +216,8 @@ header nav ul li a
     text-align: center;
     font-family: 'Crete Round', arial;
     text-decoration: underline;
+    color: black;
+    text-shadow: white 1px 0px 10px
 }
 #possibilities article
 {
@@ -216,7 +228,7 @@ header nav ul li a
     padding-bottom: 0px;
     background-repeat: no-repeat;
 }
-article h4
+#possibilities article h4
 {
     border-bottom:  1px solid #ddd;
     padding-bottom: 20px;
@@ -236,9 +248,10 @@ article h4
     font-size: 14px;
 }
 #possibilities #infos{
+    width: auto;
     float: right;
-    padding-right: 240px;
-    padding-top: 20px;
+    padding-right: 200px;
+    padding-top: 30px;
 }
 #possibilities #infos p{
     padding: 5px;
@@ -250,23 +263,47 @@ article h4
 
 /*skills*/
 
+#skills article
+{
+    width: 450px;
+    height: 447px;
+    float: left;
+    padding: 40px;
+    padding-bottom: 0px;
+}
+
 #skills
 {
-    background-color: #fff;
+    background-color: #548e9d;
     padding:  60px 0px 80px;
 
 }
+#skills li{
 
+  border-bottom:  1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Crete Round', arial;
+  text-decoration:none;
+}
 #skills h2
 {
     width: 350px;
-    margin: 0 370px 0px ;
-    text-decoration: underline;
+    margin: 0 350px 0px ;
     padding-bottom: 80px;
     text-align: center;
+    color:#efefef;
+    text-shadow: black 1px 0 10px;
+    text-decoration: underline;
+
 }
 #skills article
 {
   float: left;
   padding: 40px;
+  margin-left: 60px;
+}
+#skills article h4{
+  text-decoration: none;
 }
