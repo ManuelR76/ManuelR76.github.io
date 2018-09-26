@@ -1,7 +1,11 @@
 /*
  GENERAL
 */
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
 *
+
 {
     margin: 0;
     padding: 0;
@@ -48,11 +52,11 @@ a:hover{
     text-shadow: black 1px 0 10px;
     cursor: pointer;
 }
-.container
+.wrapper
 {
-    width: 100%;
+    width: 1080px;
     margin: 0 auto;
-    padding: 0 0px;
+    padding: 0 10px;
 }
 .orange
 {
@@ -65,9 +69,7 @@ a:hover{
 {
     clear: both;
 }
-.row{
-  width: auto;
-}
+
 /* HEADER */
 
 header
@@ -106,7 +108,7 @@ header nav ul li a
 {
     font-family: 'Crete Round';
     font-weight: bold;
-    margin-right: 30px;
+    margin-right: 20px;
     cursor: auto;
 }
 
@@ -204,7 +206,7 @@ div.clear{
   margin-left: 80px;
 }
 article#image{
-  margin-left: 80px;
+  margin-left: 60px;
 }
 #possibilities h2
 {
@@ -248,7 +250,7 @@ article#image{
 #possibilities #infos{
     width: auto;
     float: right;
-    padding-right: 250px;
+    padding-right: 200px;
     padding-top: 30px;
 }
 #possibilities #infos p{
