@@ -3,8 +3,8 @@
 */
 *
 {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 body
 {
@@ -12,13 +12,11 @@ body
     width: auto;
     scroll-behavior: smooth;
 }
-h1,h3{
-    color:#EFEEEC;
-}
-h1{
+h1.navbar-brand{
     font-family: 'Crete Round', serif;
     font-size: 45px;
-    text-shadow: black 1px 0 10px;
+    text-shadow: black 0px 0 10px;
+    color: #006c89;
 }
 h2{
     font-family: 'Crete Round', serif;
@@ -26,9 +24,13 @@ h2{
 }
 h3{
     font-size: 30px;
+    color:#EFEEEC;
 }
 h4{
     font-size: 25px;
+}
+h5{
+  font-family:'Crete Round', serif;
 }
 p{
     line-height: 20px;
@@ -72,17 +74,28 @@ a:hover{
 
 header
 {
-    height: 120px;
+    height:auto;
     width: 100%;
     position: fixed;
+    z-index: 100;
     background-color: #B1B1B177;
     border-bottom: 1px solid #ddd7;
-}
 
-header h1
+}
+header h1.navbar-brand
 {
     float: left;
-    margin-top: 32px;
+    margin: 15px;
+    margin-left: 80px;
+}
+.navbar.navbar-expand-lg.navbar-custom.bg-custom .navbar-toggler{
+  border-color: #EFEEEC;
+}
+.navbar.navbar-expand-lg.navbar-custom.bg-custom .navbar-toggler-icon{
+}
+#navbarNavDropdown.collapse.navbar-collapse{
+    float: right;
+    color:#EFEEEC;
 }
 header h1:hover{text-decoration: underline;
         color: #ff7a00;
@@ -91,31 +104,28 @@ header h1:hover{text-decoration: underline;
 header h1 nav{
   position: absolute;
 }
-header nav
-{
-    float: right;
-    margin-top: 50px;
-
-}
 header nav ul li
 {
     float:left;
     display: inline-block;
 }
+ul.navbar-nav {
+  float: left;
+  margin-left: 50px;
+}
 header nav ul li a
 {
     font-family: 'Crete Round';
     font-weight: bold;
-    margin-right: 30px;
+    margin-right: 40px;
     cursor: auto;
 }
-
-
 /* MAIN IMAGE */
 
 #main-image
 {
-    height: 750px;
+    height: 850px;
+    width: auto;
     border-bottom: 1px solid #ddd;
     background: url('images/sea-2755901_1920.jpg') top center;
     background-repeat: no-repeat;
@@ -126,22 +136,26 @@ header nav ul li a
     color: #EFEEEC;
     font-weight: normal;
     text-align: center;
-    padding: 300px 0 40px 0;
+    padding: 365px 0 40px 0;
     margin-bottom: 20px;
     text-shadow: black 1px 0 10px;
 }
 
-/* STEPS */
+STEPS */
 
 #steps{
-    height: 280px;
+    height: auto;
     width: 100%;
     border-bottom: 1px solid #ddd;
     background-color: #FFF;
 }
+#steps .row{
+   margin-left: -45px;
+}
 a#step-1{
   color: #007bff;
   text-shadow: black 1px 0 1px;
+
 }
 #steps h4:hover{
    text-decoration: underline;
@@ -151,22 +165,22 @@ a#step-1{
 }
 #steps ul
 {
-    margin: 80px;
+    margin: 100px auto;
 
 }
 #steps ul li
 {
-    width: 310px;
+    width: 380px;
     float:left;
-    margin: 80px auto 0;
+    margin: 30px auto;
+    padding: auto;
     text-align: center;
-    margin-right: 40px;
-
 }
 #steps h4
 {
     margin-top: 70px;
-    font-family: 'Crete Round'
+    font-family: 'Crete Round';
+    font-size: 20px;
 }
 #steps p
 {
@@ -177,22 +191,16 @@ a#step-1{
 {
     background-repeat: no-repeat;
     background-position:  top center;
-
-}
-#step-2
-{
-     background-repeat: no-repeat;
-    background-position:  top center;
-}
-#step-3
-{
-    background-repeat: no-repeat;
-    background-position:  top center;
 }
 
 /* POSSIBILITIES */
 
-
+#description .image-fluid{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  float: right;
+}
 #possibilities
 {
     background-color: #efefef;
@@ -203,9 +211,6 @@ a#step-1{
 div.clear{
   margin-left: 80px;
 }
-article#image{
-  margin-left: 80px;
-}
 #possibilities h2
 {
     width: 350px;
@@ -213,11 +218,10 @@ article#image{
     padding-bottom: 70px;
     text-align: center;
     font-family: 'Crete Round', arial;
-    text-decoration: underline;
     color: black;
     text-shadow: white 1px 0px 10px
 }
-#possibilities article
+#possibilities #description
 {
     width: 450px;
     height: 447px;
@@ -225,17 +229,17 @@ article#image{
     padding: 40px;
     padding-bottom: 0px;
     background-repeat: no-repeat;
+    text-align: justify;
 }
-#possibilities article h4
+#possibilities  h4
 {
     border-bottom:  1px solid #ddd;
     padding-bottom: 20px;
     margin-bottom: 20px;
     text-align: center;
     font-family: 'Crete Round', arial;
-    text-decoration: underline;
 }
-#possibilities p
+#possibilities li
 {
     text-align: justify;
     margin-bottom: 40px;
@@ -252,8 +256,7 @@ article#image{
     padding-top: 30px;
 }
 #possibilities #infos p{
-    padding: 5px;
-
+    margin: 5px;
 }
 #possibilities #infos p #black{
     color: #ddd;
@@ -261,47 +264,174 @@ article#image{
 
 /*skills*/
 
-#skills article
-{
-    width: 450px;
-    height: 447px;
-    float: left;
-    padding: 40px;
-    padding-bottom: 0px;
+#skills{
+  margin: auto 0px 60px;
+}
+.progress{
+  width: 400px;
+  margin: 20px;
+}
+table{
+  align-items: center;
+  margin: 0px 20px;
+}
+h2{
+  margin: 40px 400px;
 }
 
-#skills
-{
-    background-color: #548e9d;
-    padding:  60px 0px 80px;
-
+/* education */
+#background{
+  background: url('images/sea-1.jpg') top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-#skills li{
-
-  border-bottom:  1px solid #ddd;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+#education{
+  padding: 40px 0px;
+}
+#education h2{
+  padding: 60px;
   text-align: center;
   font-family: 'Crete Round', arial;
-  text-decoration:none;
+  text-shadow: black 1px 0 10px;
+  color: white;
 }
-#skills h2
-{
-    width: 350px;
-    margin: 0 350px 0px ;
-    padding-bottom: 80px;
-    text-align: center;
-    color:#efefef;
-    text-shadow: black 1px 0 10px;
-    text-decoration: underline;
+#education h5{
+    font-size: 20px
+    color:#EFEEEC;
+    text-shadow: white 1px 0 10px;
+}
+#education p{
+     font-family: 'Crete Round', arial;
+     color: white;
+     text-shadow: black 1px 0 10px;
+}
+.circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: #ff7a00;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+  align-self: ;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #ff7a00;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #ff7a00;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+  height: 41px;
+}
+.timeline .corner {
+  border: 3px solid #ff7a00;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+#job{
+  background: url('images/sea-1.jpg') top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 60px 0px 60px;
 
 }
-#skills article
-{
-  float: left;
-  padding: 40px;
-  margin-left: 60px;
+#job h2{
+  padding: 60px;
+  text-align: center;
+  font-family: 'Crete Round', arial;
+  text-shadow: black 1px 0 10px;
+  color: white;
 }
-#skills article h4{
-  text-decoration: none;
+#job h5{
+    font-size: 20px
+    color:#EFEEEC;
+    text-shadow: white 1px 0 10px;
+}
+#job p{
+   font-family: 'Crete Round', arial;
+   color: white;
+   text-shadow: black 1px 0 10px;
+}
+
+#job .circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: #006c89;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+#job .how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #006c89;
+  z-index: 1;
+}
+
+#job .timeline hr {
+  border-top: 3px solid #006c89;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+#job .timeline .corner {
+  border: 3px solid #006c89;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .col-2 .corner left-bottom {
+  display: flex;
+  overflow: hidden;
+  height: 39px;
 }
