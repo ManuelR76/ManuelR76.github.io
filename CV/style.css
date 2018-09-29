@@ -1,0 +1,507 @@
+/*
+ GENERAL
+*/
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    height: auto;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+h1.navbar-brand{
+    font-family: 'Crete Round', serif;
+    font-size: 45px;
+    text-shadow: black 0px 0 10px;
+    color: #006c89;
+}
+h2{
+    font-family: 'Crete Round', serif;
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+    color:#EFEEEC;
+}
+h4{
+    font-size: 25px;
+    font-family: 'Crete Round', serif;
+    text-shadow: white 0px 0 10px;
+}
+h5{
+  font-family:'Crete Round', serif;
+}
+p{
+    font-size: 18px;
+    line-height: 18px;
+    color: #777;
+}
+ul{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: #EFEEEC;
+    text-shadow: black 1px 0 10px;
+}
+a:hover{
+   text-decoration: underline;
+    color: #ff7a00;
+    text-shadow: black 1px 0 10px;
+    cursor: pointer;
+}
+.container
+{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+.orange
+{
+    color: #ff7a00;
+}
+.black{
+    color: black;
+}
+.clear
+{
+    clear: both;
+}
+.row{
+  width: auto;
+}
+/* HEADER */
+
+header
+{
+    height:auto;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #B1B1B177;
+    border-bottom: 1px solid #ddd7;
+}
+header h1.navbar-brand
+{
+    float: left;
+    margin: 15px 55px;
+    margin-left: 60px;
+}
+.navbar-toggler-icon{
+
+}
+.navbar.navbar-expand-lg.navbar-custom.bg-custom .navbar-toggler{
+  border-color: coral;
+}
+#navbarNavDropdown.collapse.navbar-collapse{
+    float: right;
+    color: coral;
+}
+header h1:hover{text-decoration: underline;
+        color: #ff7a00;
+        cursor: pointer;
+}
+header h1 nav{
+  position: absolute;
+}
+header nav ul li
+{
+    float:left;
+    display: inline-block;
+}
+ul.navbar-nav {
+  float: left;
+  margin-left: 50px;
+}
+header nav ul li a
+{
+    font-family: 'Crete Round';
+    font-weight: bold;
+    margin-right: 40px;
+    cursor: auto;
+}
+/* MAIN IMAGE */
+
+#main-image
+{
+    height: 850px;
+    width: auto;
+    border-bottom: 1px solid #ddd;
+    background: url('images/sea-2755901_1920.jpg') top center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.white-text {
+    color: #fff;
+}
+
+#main-image h2
+{
+    color: #EFEEEC;
+    font-weight: normal;
+    text-align: center;
+    padding: 230px 0 40px 0;
+    margin-bottom: 20px;
+    text-shadow: black 1px 0 10px;
+}
+
+STEPS */
+
+#steps{
+    height: auto;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    background-color: #FFF;
+}
+#steps .row{
+   margin-left: -45px;
+}
+a#step-1{
+  color: #007bff;
+  text-shadow: black 1px 0 1px;
+
+}
+#steps h4:hover{
+   text-decoration: underline;
+    color: #ff7a00;
+    text-shadow: black 1px 0 10px;
+    cursor: pointer;}
+}
+#steps ul
+{
+    margin: 80px auto;
+
+}
+#steps ul li
+{
+    width: 390px;
+    float:left;
+    margin: 30px auto;
+    padding: auto;
+    text-align: center;
+}
+#steps h4
+{
+    margin-top: 20px;
+    font-family: 'Crete Round';
+    font-size: 20px;
+}
+#steps p
+{
+    margin-bottom: 20px;
+}
+
+.icon
+{
+    background-repeat: no-repeat;
+    background-position:  top center;
+    font-size: 2rem;
+}
+.icon:hover{
+    font-size: 3rem;
+    cursor: pointer;
+}
+/* POSSIBILITIES */
+
+
+#possibilities
+{
+    background-color: #efefef;
+    padding:  60px 0px 60px;
+    border-bottom: 1px solid #ddd
+
+}
+div.clear{
+  margin-left: 80px;
+}
+#possibilities h2{
+  padding: 0px auto 60px;
+  text-align: center;
+  font-family: 'Crete Round', arial;
+  text-shadow: white 1px 0 10px;
+  color: black;
+  margin-bottom: 40px;
+}
+#description
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    text-align:justify;
+}
+#description p{
+  line-height: 20px;
+  margin: auto;
+}
+.image-fluid
+{
+    width: 400px;
+    height: 400px;
+    float: right;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: 40px;
+    padding-bottom: 0px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    position: relative;
+}
+#possibilities  h4
+{
+    border-bottom:  1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Crete Round', arial;
+}
+#possibilities li
+{
+    text-align:center;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Crete Round';
+    font-size: 16px;
+}
+#possibilities #infos{
+    width: auto;
+    padding-top: 20px;
+}
+#possibilities #info ul{
+    margin-bottom: 20px;
+}
+#possibilities #infos li{
+    margin: 5px;
+    margin-bottom: 10px;
+    text-align:center;
+}
+#possibilities #infos li #black{
+    color: #ddd;
+
+}
+#Passions h4{
+  text-shadow: 1px white;
+}
+.icons{
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-position:  top center;
+  font-size: 2rem;
+}
+#possibilities .icon ul
+{
+  text-align: center;
+
+}
+
+
+/*skills*/
+
+#skills
+{
+    background: #fff;
+    margin-bottom: 80px;
+}
+#skills .heading h2{
+  padding-top: 60px;
+  text-align: center;
+  font-family: 'Crete Round', arial;
+  text-shadow: white 1px 0 10px;
+  color: black;
+}
+#skills .progress
+{
+    height: auto;
+    margin: 50px 20px;
+    backface-visibility: #ddd;
+}
+#skills .progress-bar
+{
+    background: ;
+    color: #00206d;
+}
+#skills .progress h5
+{
+    font-family: 'Crete Round', arial;
+    text-shadow:  1px 1px 1px #000;
+    font-size: 15px;
+    color: #fff;
+}
+
+
+/* education */
+#background{
+  background: url('images/sea-1.jpg') top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#education{
+  padding: 40px 0px;
+}
+#education h2{
+  padding: 60px;
+  text-align: center;
+  font-family: 'Crete Round', arial;
+  text-shadow: black 1px 0 10px;
+  color: white;
+}
+#education h5{
+    font-size: 20px
+    color:#EFEEEC;
+    text-shadow: white 1px 0 10px;
+}
+#education p{
+     font-family: 'Crete Round', arial;
+     color: white;
+     text-shadow: black 1px 0 10px;
+}
+.circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: #ff7a00;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row .col-2 {
+  align-self: ;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #ff7a00;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #ff7a00;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+  height: 41px;
+}
+.timeline .corner {
+  border: 3px solid #ff7a00;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+#job{
+  background: url('images/sea-1.jpg') top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 60px 0px 60px;
+
+}
+#job h2{
+  padding: 60px;
+  text-align: center;
+  font-family: 'Crete Round', arial;
+  text-shadow: black 1px 0 10px;
+  color: white;
+}
+#job h5{
+    font-size: 20px
+    color:#EFEEEC;
+    text-shadow: white 1px 0 10px;
+}
+#job p{
+   font-family: 'Crete Round', arial;
+   color: white;
+   text-shadow: black 1px 0 10px;
+}
+
+#job .circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: #006c89;
+  color: #fff;
+  max-height: 50px;
+  z-index: 2;
+}
+
+#job .how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #006c89;
+  z-index: 1;
+}
+
+#job .timeline hr {
+  border-top: 3px solid #006c89;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+#job .timeline .corner {
+  border: 3px solid #006c89;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .col-2 .corner left-bottom {
+  display: flex;
+  overflow: hidden;
+  height: 39px;
+}
+
+/* contact */
+#contact{
+  margin: 60px auto 80px;
+}
+#contact h2{
+  text-align: center;
+  margin-bottom: 40px;
+}
+#contact ul{
+  text-align: center;
+}
