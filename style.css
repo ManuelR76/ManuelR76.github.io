@@ -87,13 +87,14 @@ header
 header h1.navbar-brand
 {
     float: left;
-    margin: 15px 65px;
-    margin-left: 50px;
+    margin: 15px 55px;
+    margin-left: 60px;
+}
+.navbar-toggler-icon{
+
 }
 .navbar.navbar-expand-lg.navbar-custom.bg-custom .navbar-toggler{
   border-color: coral;
-}
-.navbar.navbar-expand-lg.navbar-custom.bg-custom .navbar-toggler-icon{
 }
 #navbarNavDropdown.collapse.navbar-collapse{
     float: right;
@@ -133,12 +134,17 @@ header nav ul li a
     background-repeat: no-repeat;
     background-attachment:fixed;
 }
+
+.white-text {
+    color: #fff;
+}
+
 #main-image h2
 {
     color: #EFEEEC;
     font-weight: normal;
     text-align: center;
-    padding: 370px 0 40px 0;
+    padding: 230px 0 40px 0;
     margin-bottom: 20px;
     text-shadow: black 1px 0 10px;
 }
@@ -216,8 +222,8 @@ div.clear{
   padding: 0px auto 60px;
   text-align: center;
   font-family: 'Crete Round', arial;
-  text-shadow: black 1px 0 10px;
-  color: white;
+  text-shadow: white 1px 0 10px;
+  color: black;
   margin-bottom: 40px;
 }
 #description
@@ -274,7 +280,7 @@ div.clear{
 }
 #possibilities #infos li{
     margin: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     text-align:center;
 }
 #possibilities #infos li #black{
@@ -282,11 +288,13 @@ div.clear{
 
 }
 #Passions h4{
-  margin-top: 40px;
   text-shadow: 1px white;
 }
-.icon{
+.icons{
   margin-top: 20px;
+  background-repeat: no-repeat;
+  background-position:  top center;
+  font-size: 2rem;
 }
 #possibilities .icon ul
 {
@@ -303,7 +311,7 @@ div.clear{
     margin-bottom: 80px;
 }
 #skills .heading h2{
-  padding: 60px;
+  padding-top: 60px;
   text-align: center;
   font-family: 'Crete Round', arial;
   text-shadow: white 1px 0 10px;
